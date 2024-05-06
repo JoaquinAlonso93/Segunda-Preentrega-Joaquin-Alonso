@@ -1,0 +1,400 @@
+/* estilos generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #3c122c;
+}
+
+.input{
+    border: none;
+    font-size: 1.1rem;
+    background-color:#ffffff;
+    padding: 18px;
+    outline: none;
+    color: #3c122c;
+    border-radius: 5px;
+}
+
+.button{
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.button-primary{
+    color:#3c122c;
+    background-color: yellow;
+}
+
+.button-primary:hover{
+    background-color: #fc5185;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.button-secondary{
+    color: white;
+    background-color: #3c122c;
+}
+
+.button-secondary:hover{
+    background-color: #fc5185;
+    color: #3c122c;
+    transition: 0.3s;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 20px;
+}
+
+/* Head */
+/* Body */
+
+
+body{
+    background-color: rgb(173, 173, 173);
+}
+
+body, input{
+    font-family: "Nunito", sans-serif;
+}
+
+
+/* header */
+
+header nav div a img{
+    width: 70px;
+}
+
+.menu{
+    background-color: #61c8d1 !important;
+    font-size: 20px;       
+}
+
+.nav-link{
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: #ffd3b5;
+}
+
+.menu-icon{
+    background-image: url(../img/menu-hamburguesa.svg);
+}
+
+.menu-button{
+    border: none;
+}
+
+.menu-button:focus{
+    box-shadow: none;
+}
+
+.button-search{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Main Index */
+
+.encabezado-img{
+    background-image: url(./../img/Caramelitos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position:center 
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px ;
+    
+
+}
+
+main{
+    background-color: #61c8d1;
+}
+
+
+
+.card{
+    align-items: center;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card-img{
+    width: 100px;
+}
+
+/* .carrusel{
+    float: none;
+    margin: auto;
+    width: 1300px;
+} */
+
+/* Footer */
+
+.footer{
+    background-color: #fc5185;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sections{
+    background-color: #ffeffe;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-sections-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0px 20px;
+}
+
+.footer-section-table{
+    list-style: none;
+}
+
+.footer-section-title{
+    color: #3c122c;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section-links{
+    margin-bottom: 0.2rem;
+}
+
+.footer-section-link{
+    color: #3c122c;
+    font-size: 1.1rem;
+}
+
+.footer-section-link:hover{
+    color: #61c8d1;
+}
+
+.social-container{
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    margin-right: 15px;
+}
+
+.social-icon img{
+    height: 28px;
+}
+
+.suscribe-container-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.suscribe-container-input{
+    margin-bottom: 1rem;
+}
+
+.suscribe-container-button{
+    text-align: center;
+    width: 150px;
+}
+
+.footer-copy-text{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width:850px){
+    .footer-section{
+        width: 49%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:510px){
+    .footer-section{
+        width: 100%;
+    }
+}
+
+/* Main Galeria */
+
+
+.carrusel-section{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.carrusel-section-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-card{
+    display: none;
+}
+
+.section-card.show{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    max-height: 500px;
+}
+
+.section-card-content{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+    color:#3c122c
+}
+
+.section-card-text{
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.section-card-buttons a{
+    margin-right: 1rem;
+}
+
+.section-card-title{
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.section-card-imgs{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-card-img{
+    padding: 50px;
+}
+
+.section-card-img img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+
+}
+
+.carrusel-control{
+    right: 10px;
+    display: flex;
+}
+
+.prev, .next{
+    color: #ffffff;
+    background-color: #3c122c;
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;   
+}
+
+.prev:hover, .next:hover{
+    background-color: #fc5185;
+    color: #3c122c;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1150px){
+    .section-card-title{
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .section-card-img{
+        padding: 50px 0;
+    }
+
+    .section-card-title{
+        font-size: 3rem;
+    }
+
+    .section-card.show{
+        flex-direction: column;
+        max-height: 100%;
+        padding-bottom: 0;
+    }
+
+    .section-card-content{
+        margin-bottom: 2rem;
+    }
+
+    .carrusel-section-cards{
+        justify-content: flex-end;
+    }
+
+    .carrusel-control{
+        flex-direction: row;
+        align-items: center;
+        position: static;
+    }
+
+    .next{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .section-card-text, .section-card-title{
+        text-align: center;
+    }
+
+    .section-card-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-card-buttons a{
+        margin: 0;
+        text-align: center;
+    }
+
+    .section-card-buttons a:nth-child(1){
+        margin-bottom: 0.7rem;
+    }
+}
+
+
+
