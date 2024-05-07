@@ -59,11 +59,6 @@ a{
 /* Head */
 /* Body */
 
-
-body{
-    background-color: rgb(173, 173, 173);
-}
-
 body, input{
     font-family: "Nunito", sans-serif;
 }
@@ -396,5 +391,115 @@ main{
     }
 }
 
+/* Main Contacto */
+
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo-contacto{
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo-contacto span{
+    color: #fc5185;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255 .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form{
+    background:#ffeffe;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1 / 3;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
 
 
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 0.7em;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form form button{
+    background: #ffd3b5;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background-color: #3c122c;
+    color: #ffffff;
+    transition: background-color 0.5s ease-out;
+    outline: 0;
+}
+
+.contact-info{
+    background: #fc5185;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: 0.3em;
+}
+
+/* pantallas grandes */
+
+@media (min-width: 700px){
+    main{
+        padding: 0 4rem;
+    }
+
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper > *{
+        padding: 2em;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em;
+        text-align: left;
+    }
+}    
